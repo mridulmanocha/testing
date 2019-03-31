@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-var uri = process.env.MONGODB_URI;
-mongoose.connect(uri.toString());
+
+mongoose.connect(process.env.MONGODB_URI);
 
 module.exports = {
 	mongoose
